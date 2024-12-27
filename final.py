@@ -1,19 +1,15 @@
-user = ("Ivan")
-сontent_of_the_note = ("Руцензия к книге.","Дела на неделю . ","Просьба бабушки. ") #Название заметок
-statys = ("active") # Статус заметок
-date_of_creation = ("24-12-2024") #дата создания
-date_of_changes = ("25-12-2024")  #Дата последнего изменения
+user = input("Введите как вас зовут: ")
 
-user_note = ["Ivan",["Руцензия к книге.","Дела на неделю . ","Просьба бабушки. "],"active" , "24-12-2024" ,"25-12-2024" ] #данные о пользователе
+import datetime
+created_date = datetime.date.today()
+print(f"Дата создания заметки в формате \"дд-мм-гггг\": {created_date.strftime("%d-%m-%Y")}")
+issue_date=input("Дата истечения заметки (дедлайн) в формате \"дд-мм-гггг\": ")
+issue_date=datetime.datetime.strptime(issue_date, "%d-%m-%Y")
 
-notes_1 = ("Рецензия к книге.")
-notes_2 = ("Дела на неделю .")
-notes_3 = ("Просьба бабушки. ")
+notes_1 = input("Название заметки : ") , input("Описание заметки: ")
 
-list_of_notes = ["Рецензия к книге." ,"Дела на неделю .","Просьба бабушки. "] # список заметок
-
-user_account_information = [user_note , list_of_notes] #данные пользователя , список заметок
-print(user_account_information)
+user_date = ["Имя пользователя:",user ,"Заметка и описание: ",notes_1,"Дедлайн заметки:", issue_date]
+print(user_date)
 
 
 
