@@ -7,9 +7,9 @@ issue_date=input("Дата истечения заметки (дедлайн) в
 issue_date=datetime.datetime.strptime(issue_date, "%d-%m-%Y")
 
 notes_1 = input("Название заметки : ") , input("Описание заметки: ")
+status = input("Статус заметки:")
 
-user_date = ["Имя пользователя:",user ,"Заметка и описание: ",notes_1,"Дедлайн заметки:", issue_date]
-print(user_date)
-
-
+print(f"Никнейм: {user}, Название и описание заметки: {notes_1},"
+      f"Дата создания:{created_date},Статус заметки: {status},"
+      f"Дэдлайн: {issue_date}")
 
