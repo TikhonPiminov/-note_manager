@@ -1,5 +1,6 @@
-title_1 = input("Основные темы")
-title_2 = input("Проблемы героев")
-title_3 = input("Повороты в сюжете")
-note = input(f"Заметка о книге: {title_1},{title_2},{title_3}")
-print(note)
+title_ = "Заметки о книге "
+title_1 = "Основные темы"
+title_2 = "Персонажи"
+title_3 = "Рекомендации для чтения"
+
+note = [title_ ,title_1 ,title_2 ,title_3 ,]
