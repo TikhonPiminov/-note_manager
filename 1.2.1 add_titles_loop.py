@@ -4,8 +4,9 @@ notes = []
 def new_note () :
     note = {
         "user_name": input("Ваш логин:"),
-        "name_note": input(f"Название заметки : "),
+        "name_note": input(f"Заголвок заметки: "),
         "description_note": input("Описание заметки: "),
+        "data_note": input("Дата создания (дд-мм-гггг): "),
         "deadline_note": input("Дэдлан заметки (дд-мм-гггг): ")
 
             }
@@ -17,8 +18,7 @@ while True :
     print("Выберите действие; \n"
           "1 - Новая заметка; \n"
           "2 - Просмотреть все заметки; \n"
-          "3 - Удалить заметку; \n"
-          "4 - Выйти; \n"
+          "3 - Выйти; \n"
           )
     operator = input("Введите название операции: ")
     if operator == "1":
@@ -27,7 +27,5 @@ while True :
     elif operator == "2":
         print(notes)
     elif operator == "3":
-        notes.remove(note_remov())
-    elif operator == "4":
         print(" Выход.")
         break
